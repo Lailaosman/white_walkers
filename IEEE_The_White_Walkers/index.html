@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Together</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="js/index.js"/>
+</head>
+
+<body>
+  <header>
+    <div class="topnav">
+      <img id="tt" width="10%"src="img/Home.jpg" alt="we are here Together.you are not alone!">
+        <a href="pages/survey.html"> sign in </a>
+        <a href=""> my account </a>
+        <a href="#ffr"> Contact </a>
+    </div>
+  </header>
+
+  <div  class="row">
+    <div class="column" style="background-color:none;">
+      <h2>disabilities</h2>
+      <p>Don't be afraid to accept help from others.
+      <a href="pages/disabilities.html">
+      <img id="ip" src="img/Home1.png" width="70%" >
+      </a>
+      </p>
+    </div>
+
+    <div class="column" style="background-color:none;">
+      <h2>HEALTH CARE</h2>
+      <p>take self-care trip with us.
+      <a href="pages/healthcare.html">
+      <img id="ip" src="img/Home2.png" width="70%" >
+      </a>
+      </p>
+    </div>
+
+    <div class="column" style="background-color:none;">
+      <h2>STAY_SAFE</h2>
+      <p>#be supportive.#be careful.#be alert.#be ready to fight Covid-19
+      <a href="pages/healthcare.html">
+      <img id="ip" src="img/Home3.jpg" width="90%" >
+      </a>
+      <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">
+      </p>
+    </div>
+
+    <div class="column" style="background-color:none;">
+      <h2>DELIVERY</h2>
+      <p>24-HOUR SERVICES
+        <a href="pages/healthcare.html">
+          <img src="img/delivery.jpg" width="60%" alt="error">
+        </a>
+      </p>
+    </div>
+  </div>
+      <hr>
+  <div class="slideshow-container" style="content-align= center">
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/Home5.jpg"  style="width:50%">
+
+    </div>
+
+      <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/Home6.jpg"  style="width:50%">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/Home7.jpg"  style="width:50%">
+    </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div id="po">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </div>
+
+  <div border-radius:"1px solid";class="reiders">
+    <p>
+      welcome to white walkers.com,where our team of therapists and experts are on hand to help you find top-quality adaptive
+      equipment based on the needs of your chil. this page is designed to help you find the appropriate tools,
+      therapy equipment and everyday essentials for adults and children with special needs,including expertly designed equipment
+      to aid in sitiing,standing, transportation,walking,lying down,sensory integration,balance,crawling,bathing and more.
+      let's face it -many of us don't know the names of specific special needs equipment,so shopping by need is often is often a simpler
+      solution.
+    </p>
+  </div>
+
+  <div id="ffr" class="footer">
+    <h2>our email</h2>
+    <p>contact information: <a href="laila.gmail.com">laila.gmail.com </a>.</p>
+    <h2> CONTACT </h2>
+    <p>for more information abot our products.please contact us on custumor services 01205974327
+       <hr></p>
+
+  <div class="solid">
+     <h2>fill in your Email</h2>
+     <form action="/action_page.php">
+     <div class="form-group">
+       <label for="email">Email:</label>
+       <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+       <label for="pwd">Password:</label>
+       <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+      <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+
+   <button type="submit" onclick="txt_alert()">submit </button>
+
+   </form>
+  </div>
+    <div class="solid" >
+       <h2>fill in your Email</h2>
+       <form action="/action_page.php">
+       <div class="form-group">
+       <label for="email">Email:</label>
+       <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+       </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="checkbox">
+       <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+       <button type="submit" class="btn btn-default">Submit</button>
+       </form>
+    </div>
+    </div>
+  </div>
+</body>
+
+
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+    }
+</script>
+
+</html>
